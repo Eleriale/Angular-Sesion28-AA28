@@ -1,0 +1,37 @@
+<section class="sectionGeneral p-5 d-flex justify-content-center align-items-center">
+    <section class="sectionForm login d-flex justify-content-center align-items-center">
+        <form  #form="ngForm" class="p-5">
+            <h1 class="text-center">Login</h1>
+            <section class="sectionImagen">
+                <img src="./assets/image.png" alt="" class="hamtaro">    
+            </section>
+            
+            <!-- USERNAME -->  
+            <section class="sectionField">
+                <mat-form-field class="" appearance="fill">
+                    <mat-label>Username</mat-label>
+                    <input matInput  maxlength="16" type="text" placeholder="" name="username" [(ngModel)]="username" required>
+                   
+                </mat-form-field>
+            </section>
+
+            <!-- Password -->  
+            <section class="sectionField">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Password</mat-label>
+                    <input matInput  type="password" placeholder="" value="" name="password" [(ngModel)]="password" required>
+                   
+                </mat-form-field>
+            </section>
+
+            <!--BOTONES -->
+            
+            <section class="sectionButton">
+                <button mat-raised-button type="button" color="primary"  (click)="Login()" >Login</button>            
+            </section>
+            <section class="p-2">
+                <div *ngIf="mostrar" class="error alert alert-danger">Usuario o contraseña incorrectos</div>
+            </section>
+            </form>
+    </section>
+</section>

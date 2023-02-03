@@ -1,0 +1,39 @@
+<section class="sectionGeneral">
+    <section class="sectionForm">
+        <h2>operaciones matematicas</h2>
+        <form class="example-form">
+            <section class="form-group">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Ingrese el primer valor:</mat-label>
+                    <input matInput placeholder="Escriba un numero" type="number" name = "valor1" [(ngModel)] = "valor1"/>
+                </mat-form-field>                
+            </section>
+
+            <section class="form-group">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Ingrese el segundo valor:</mat-label>
+                    <input matInput placeholder="Escriba un numero" type="number" name = "valor2" [(ngModel)] = "valor2"/>
+                </mat-form-field>                
+            </section>
+
+            <section>
+                <mat-form-field appearance="fill">
+                    <mat-label>Seleccione la operacion</mat-label>
+                    <select matNativeControl required name="operaciones" [(ngModel)] = "operaciones" >
+                        <option value="sumar">Sumar</option>
+                        <option value="restar">Restar</option>
+                        <option value="multiplicar">Multiplicar</option>
+                        <option value="dividir">Dividir</option>
+                    </select>
+                </mat-form-field>
+            </section>
+
+            <section>
+                <button class="btn btn-primary" name = "button" (click)="Operar()">Enviar</button>
+            </section>
+            <p class="text-center" >{{"El resultado es :"+ resultado }}</p>
+        </form>
+    </section>
+</section>
+
+

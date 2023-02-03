@@ -1,0 +1,80 @@
+.sectionGeneral{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+
+    background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+height: 100vh;
+}
+
+h2{
+    letter-spacing: 0.5rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.sectionForm{
+    width: 30%;
+    margin-bottom: 5rem;
+}
+
+mat-form-field{
+    width: 100%;
+}
+
+.form-group{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.operacion{
+    align-items: center;
+    justify-content: start;
+}
+
+.sectionTable{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: wrap;
+
+    margin-top: 2rem;
+}
+
+
+thead{
+    border-bottom: 2px solid black;
+
+}
+
+th{
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-align: center;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(193, 247, 255);
+}
+
+td{
+    text-align: center;
+    padding-top: 1rem;
+
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
